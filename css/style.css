@@ -117,8 +117,59 @@ nav .select-bar{
     gap: 24px;
     margin-top: 24px;
 }
-
-
+/* why choose us style */
+.choose-us{
+    margin: 100px 10px;
+    text-align: center;
+}
+.choose-us h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.choose-us p{
+    color: var(--primary-color);
+    margin: 24px 0;
+}
+.choose-us h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.choose-us img{
+    margin-bottom: 32px;
+}
+.choose-us .choose-us-row1 p, .choose-us-row2 p{
+    max-width: 500px;
+}
+.choose-us .choose-us-row1{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 24px 0;
+    
+}
+.choose-us .choose-us-row1 .hotels{
+    background-color: rgba(251, 180, 99, 0.151);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: left;
+}
+.choose-us .choose-us-row1 .service{
+    background-color: rgba(41, 205, 246, 0.096);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: left;
+}
+.choose-us .choose-us-row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-us .choose-us-row2 .price{
+    background-color: #e944441e;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: left;
+}
 /* responsive for small devices */
 @media screen and (max-width:600px) {
     /* header */
@@ -146,11 +197,7 @@ nav .select-bar{
         width: 100%;
     }
     /* popular tour */
-    .popular-tour{
-        flex-direction: column;
-    }
-    /* destination */
-    .destination .destination-img-row1, .destination-img-row2, .destination-img-row3 {
+    .popular-tour,.destination .destination-img-row1, .destination-img-row2, .destination-img-row3,.choose-us .choose-us-row1 {
         flex-direction: column;
     }
     .destination img{
