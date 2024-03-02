@@ -69,7 +69,8 @@ nav .select-bar{
     font-size: 3rem;
 }
 .banner p{
-    margin: 24px 50px 48px;
+    margin: 24px auto 48px;
+    max-width: 500px;
 }
 .banner form{
     background-color: rgba(255, 255, 255, 0.233);
@@ -170,6 +171,52 @@ nav .select-bar{
     padding: 32px;
     text-align: left;
 }
+/* newsletter style */
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.newsletter .newsletter-signup{
+    padding: 40px;
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+}
+.newsletter .newsletter-signup h5{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.newsletter .newsletter-signup p{
+    color: var(--primary-color);
+    margin: 24px 0;
+    border-bottom: 3px solid #42424711;
+    padding-bottom: 16px;
+}
+.newsletter-signup form input[type="text"]{
+    display: block;
+    width: 90%;
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    border: none;
+    background-color: #13131810;
+    border-radius: 8px;
+}
+.newsletter-signup .Subscribe{
+  width: 100%;
+}
+.newsletter .newsletter-img{
+    position: relative;
+    
+}
+.newsletter .newsletter-img h2{
+    position: absolute;
+    bottom: 76px;
+    right: 0;
+    transform: rotate(-45deg);
+}
+.newsletter .newsletter-img .saveup{
+    text-align: center;
+}
 /* responsive for small devices */
 @media screen and (max-width:600px) {
     /* header */
@@ -197,7 +244,7 @@ nav .select-bar{
         width: 100%;
     }
     /* popular tour */
-    .popular-tour,.destination .destination-img-row1, .destination-img-row2, .destination-img-row3,.choose-us .choose-us-row1 {
+    .popular-tour,.destination .destination-img-row1, .destination-img-row2, .destination-img-row3,.choose-us .choose-us-row1 ,.newsletter{
         flex-direction: column;
     }
     .destination img{
