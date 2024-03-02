@@ -254,12 +254,40 @@ nav .select-bar{
     margin-bottom: 16px;
 }
 .features i:hover{
-    transform: scale(0.90) rotate(90deg) translateX(20px);
+    transform: rotate(90deg);
 }
-
-
-
-
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #13131817;
+}
+.footer .footer-details{
+    padding: 100px 50px;
+}
+.footer-details .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-details .footer-logo h3{
+    font-size: 2rem;
+}
+.footer-details p{
+    max-width: 700px;
+    margin: 15px 0;
+}
+.footer-details .footer-icon{
+    margin: 32px 0 50px;
+    border-bottom: 3px solid #42424711;
+    padding-bottom: 50px;
+}
+.footer-details .footer-icon > i {
+    margin-left: 10px;
+}
 /* responsive for small devices */
 @media screen and (max-width:600px) {
     /* header */
@@ -292,5 +320,8 @@ nav .select-bar{
     }
     .destination img{
        width: 100%;
+    }
+    .newsletter-img img{
+        width: 100%;
     }
 }
