@@ -50,6 +50,7 @@ nav .select-bar{
     padding: 16px 32px;
     color: #ffffff;
     border: none;
+    font-weight: 800;
 }
 /* Banner style */
 .banner{
@@ -84,6 +85,20 @@ nav .select-bar{
 }
 .banner i{
     margin-right: 5px;
+}
+/* popular tour style */
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 100px 10px;
+}
+.popular-tour .popular-tour-left h4{
+    font-size: 2.5rem;
+}
+.popular-tour .popular-tour-left p,ul > li {
+    margin: 24px 0;
+    color: var(--primary-color);
 }
 /* responsive for small devices */
 @media screen and (max-width:600px) {
