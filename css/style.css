@@ -44,12 +44,68 @@ ul > li a{
 nav .select-bar{
     display: none;
 }
+.btn-primary{
+    background-color: #FF5400;
+    border-radius: 8px;
+    padding: 16px 32px;
+    color: #ffffff;
+    border: none;
+}
+/* Banner style */
+.banner{
+    background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.36);
+    background-blend-mode: multiply;
+    border-radius: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 100px;
+    margin: 0 10px;
+}
+.banner h3{
+    font-size: 4rem;
+}
+.banner p{
+    margin: 24px 62px 48px;
+}
+.banner form{
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 28px;
+}
+.banner form input[type="text"]{
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 24px;
+}
+.banner i{
+    margin-right: 5px;
+}
 /* responsive for small devices */
 @media screen and (max-width:600px) {
+    /* header */
     nav > ul {
         display: none;
     }
     nav .select-bar{
         display: block;
+    }
+    /* banner */
+    .banner{
+        padding: 32px 24px;
+    }
+    .banner form{
+        display: block;
+    }
+    .banner form input[type="text"]{
+        width: 90%;
+        margin-bottom: 16px;
+    }
+    .banner form button{
+        width: 100%;
     }
 }
